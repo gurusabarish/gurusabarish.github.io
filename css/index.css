@@ -1,0 +1,200 @@
+/*home*/
+
+.home {
+    height: 110vh;
+    padding: 0;
+    padding-bottom: 0;
+    margin: 0;
+    background-image: url(/images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    overflow: hidden;
+}
+
+.name {
+    font-family: 'Alata', sans-serif;
+}
+
+.name-intro {
+    font-size: 20PX;
+    padding-top: 10%;
+    padding-left: 25%;
+}
+
+.profile {
+    padding-right: 20%;
+}
+
+.know-more {
+    padding-top: 10%;
+    padding-left: 40%;
+    font-family: cursive;
+}
+
+.know-more a:hover {
+    text-decoration-line: none;
+    color: black;
+}
+
+.home-content {
+    padding-top: 0;
+    padding-left: 18%;
+    padding-right: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    background-image: url(/images/gif.gif);
+}
+
+.social a:hover {
+    text-decoration-line: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .home {
+        height: auto;
+        background-position: left bottom;
+    }
+
+    .name-intro {
+        height: 200px;
+        padding-left: 10%;
+    }
+
+    .profile {
+        padding: 0;
+        text-align: center !important;
+    }
+
+    .home-content {
+        height: 30%;
+        background: none;
+    }
+
+    .know-more {
+        padding-top: 10%;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 10%;
+    }
+
+    .know-more a {
+        color: black;
+    }
+}
+
+/* do things */
+
+.do-things {
+    background-color: #e5e9f2;
+    height: auto;
+    padding: 0;
+    padding-bottom: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.things-i-do {
+    font-family: 'Alata', sans-serif;
+    font-size: 25px;
+}
+
+.things {
+    height: 40vh;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .do-things-card {
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 15%;
+        padding-top: 0%;
+    }
+}
+
+/* about */
+
+.about {
+    height: auto;
+    background-color: #e5e9f2;
+}
+
+.jop {
+    font-size: 30px;
+}
+
+.about-me {
+    font-family: 'Alata', sans-serif;
+    font-size: 25px;
+}
+
+.about-content {
+    font-size: 20px;
+}
+
+.about-content a:hover {
+    text-decoration-line: none;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        height: auto;
+    }
+}
+
+
+/* Skill 
+.skill {
+    height: 80vh;
+    background-color: #e5e9f2;
+}
+
+.skill-heading {
+    font-family: 'Alata', sans-serif;
+    font-size: 25px;
+}
+*/
+
+/* Projects */
+.projects {
+    height: auto;
+    background-color: #101820ff;
+}
+
+.project-heading {
+    font-family: 'Alata', sans-serif;
+    font-size: 25px;
+}
+
+.card-img-top {
+    width: 100% !important;
+    height: 350px !important;
+}
+
+.project-des-back {
+    background-color: #F2AA4CFF;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-img-top {
+        height: 180px !important;
+    }
+}
+
+
+/* recent posts */
+.blog-back {
+    background-color: #ebb951;
+}
+
+.post-card a:hover {
+    text-decoration-line: none;
+}
+
+.post-hover :hover {
+    background-color: #17a2b8;
+}
