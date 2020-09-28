@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on GuruSabarish</title>
+    <title>Tags on Guru Sabarish</title>
     <link>https://gurusabarish.tech/tags/</link>
-    <description>Recent content in Tags on GuruSabarish</description>
+    <description>Recent content in Tags on Guru Sabarish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2020 23:03:58 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2020 16:19:06 +0530</lastBuildDate>
     
 	<atom:link href="https://gurusabarish.tech/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>markdown</title>
+      <link>https://gurusabarish.tech/tags/markdown/</link>
+      <pubDate>Mon, 28 Sep 2020 16:19:06 +0530</pubDate>
+      
+      <guid>https://gurusabarish.tech/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>blog</title>
       <link>https://gurusabarish.tech/tags/blog/</link>
-      <pubDate>Tue, 11 Aug 2020 23:03:58 +0530</pubDate>
+      <pubDate>Sat, 15 Aug 2020 13:22:10 +0530</pubDate>
       
       <guid>https://gurusabarish.tech/tags/blog/</guid>
       <description></description>
@@ -23,34 +32,43 @@
     <item>
       <title>css</title>
       <link>https://gurusabarish.tech/tags/css/</link>
-      <pubDate>Tue, 11 Aug 2020 23:03:58 +0530</pubDate>
+      <pubDate>Sat, 15 Aug 2020 13:22:10 +0530</pubDate>
       
       <guid>https://gurusabarish.tech/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>javascript</title>
+      <link>https://gurusabarish.tech/tags/javascript/</link>
+      <pubDate>Fri, 14 Aug 2020 13:30:29 +0530</pubDate>
+      
+      <guid>https://gurusabarish.tech/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>theme</title>
+      <link>https://gurusabarish.tech/tags/theme/</link>
+      <pubDate>Fri, 14 Aug 2020 13:30:29 +0530</pubDate>
+      
+      <guid>https://gurusabarish.tech/tags/theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>html</title>
       <link>https://gurusabarish.tech/tags/html/</link>
-      <pubDate>Tue, 11 Aug 2020 23:03:58 +0530</pubDate>
+      <pubDate>Thu, 13 Aug 2020 23:03:58 +0530</pubDate>
       
       <guid>https://gurusabarish.tech/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>markdown</title>
-      <link>https://gurusabarish.tech/tags/markdown/</link>
-      <pubDate>Tue, 11 Aug 2020 23:03:58 +0530</pubDate>
-      
-      <guid>https://gurusabarish.tech/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>themes</title>
       <link>https://gurusabarish.tech/tags/themes/</link>
-      <pubDate>Tue, 11 Aug 2020 23:03:58 +0530</pubDate>
+      <pubDate>Thu, 13 Aug 2020 23:03:58 +0530</pubDate>
       
       <guid>https://gurusabarish.tech/tags/themes/</guid>
       <description></description>
