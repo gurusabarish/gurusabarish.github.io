@@ -1,0 +1,62 @@
+baseURL: "https://gurusabarish.tech"
+languageCode: "en-us"
+title: "Guru Sabarish"
+
+Paginate: 5
+
+enableRobotsTXT: "true"
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+params:
+  favicon: "/images/gurusabarish.jpg"
+  description: "Hi, I'm Gurusabarish, a passionate web developer and ML engineer from India. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+  googleanalytics: "UA-167646412-7"
+  disqus: "https://gurusabarish.disqus.com"
+  copyright: "2020"
+  
+  # Contact
+  contact: true
+  action: "https://formspree.io/xzbkbvgg"
+  emailname: "Gmail"
+  messagename: "message"
+  
+  # Navbar Menus
+  customMenus:
+  - name: "Blog"
+    Url: "https://gurusabarish.tech/blog"
+    
+  # Home
+  name: "Gurusabarish"
+  profile: "/images/avatar-370-456322.webp"
+  github: "https://github.com/gurusabarish"
+  linkedin: "https://linkedin.com/in/gurusabarish"
+  twitter: "https://twitter.com/gurusabarishh"
+  instagram: "https://instagram.com/gurusabarishh"
+
+  # Do things { Please change the svg icons width="3em" height="3em" }
+  thing1: "Python"
+  thing2: "Machine learning"
+  thing3: "Things for web"
+  thing1_des: "I build something beautiful using Python."
+  thing2_des: "I train robust models for various tasks."
+  thing3_des: "I love to build things for web."
+
+  # About
+  profile_image: "/images/gurusabarish.jpg"
+  jop: "Web developer"
+  jops_about: "web developer and ML engineer"
+  resume: ""
+  
+  projects:
+  - title: "Hugo Profile"
+    image: "/images/project.png"
+    description:  "A simple hugo theme for personal portfolio"
+    url: "https://github.com/gurusabarish/hugo-profile"
+    sourceurl: "https://github.com/gurusabarish/hugo-profile"
+
+Author:
+  name: "Gurusabarish"
+  website: "https://github.com/gurusabarish"
