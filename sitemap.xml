@@ -3,13 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gurusabarish.tech/blog/hugo-pagination/</loc>
+    <lastmod>2020-09-28T18:07:11+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gurusabarish.tech/blog/</loc>
-    <lastmod>2020-09-28T16:19:06+05:30</lastmod>
+    <lastmod>2020-09-28T18:07:11+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://gurusabarish.tech/</loc>
-    <lastmod>2020-09-28T16:19:06+05:30</lastmod>
+    <lastmod>2020-09-28T18:07:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gurusabarish.tech/tags/hugo/</loc>
+    <lastmod>2020-09-28T18:07:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gurusabarish.tech/tags/</loc>
+    <lastmod>2020-09-28T18:07:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gurusabarish.tech/tags/web-development/</loc>
+    <lastmod>2020-09-28T18:07:11+05:30</lastmod>
   </url>
   
   <url>
@@ -19,11 +39,6 @@
   
   <url>
     <loc>https://gurusabarish.tech/blog/markdown_3/</loc>
-    <lastmod>2020-09-28T16:19:06+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gurusabarish.tech/tags/</loc>
     <lastmod>2020-09-28T16:19:06+05:30</lastmod>
   </url>
   

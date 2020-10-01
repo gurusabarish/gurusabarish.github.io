@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="icon" href="/images/gurusabarish.jpg" type="image/gif">
+
+
+<link rel="stylesheet" href="/css/head_foot.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<meta name="description" content="Hugo provides a internal pagination. Here, we are look into how to use that internal pagination to your hugo website.We also provide a example with coding part" />
+<title>Add Hugo pagination for blog or posts in hugo</title>
+
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/blog.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container">
+		<a class="navbar-brand text-dark" href="https://gurusabarish.tech">Guru Sabarish</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+			aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="https://gurusabarish.tech#home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="https://gurusabarish.tech#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="https://gurusabarish.tech#projects">Projects</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="https://gurusabarish.tech#contact">Contact</a>
+				</li>
+				
+
+				
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="https://gurusabarish.tech/blog">Blog</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<section class="bg-light">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-8">
+        
+        <div class="p-2">
+          <h1>Add Hugo pagination for blog or posts in hugo</h1>
+          <div class="text-muted">
+            
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z" />
+              <path fill-rule="evenodd"
+                d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z" />
+            </svg>
+            Sep 28, 2020
+
+            
+            
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            </svg>
+            Gurusabarish
+            
+
+            
+            
+            <a href="https://github.com/gurusabarish/hugo-profile" target="_blank" title="Edit on github">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil float-right" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z" />
+                <path fill-rule="evenodd"
+                  d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z" />
+              </svg>
+            </a>
+            
+          </div>
+        </div>
+
+        
+        
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">
+              <a href="/">home</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="breadcrumb-item" aria-current="page">
+              <a href='https://gurusabarish.techblog'>blog</a>
+            </li>
+            
+            
+            
+            
+            
+            <li class="breadcrumb-item" aria-current="page">
+              <a href='https://gurusabarish.techblog/hugo-pagination'>hugo-pagination</a>
+            </li>
+            
+            
+            
+            
+            
+            
+          </ol>
+        </nav>
+
+        
+        <div class="py-2">
+          
+        </div>
+
+        
+        <article>
+          <p>In this article, we are discuss about <strong>&lsquo;&lsquo;&lsquo;How to set hugo pagination in your website which is generated by Hugo?'''</strong>.</p>
+<h1 id="introduction-to-hugo">Introduction to Hugo</h1>
+<p>Hugo is a static site generator which helps to build a website easily and looks like a professional developer. Hugo is made with GOLANG and maintaining by <a href="https://github.com/orgs/gohugoio/people">hugo developers</a>. Hugo is the fastest genarators camparitively other static site generators.</p>
+<h3 id="why-hugo-is-so-popular">Why hugo is so popular?</h3>
+<ul>
+<li>You get a strong security for website</li>
+<li>To get a high Performance website</li>
+<li>Ease of use even your are not a developer</li>
+<li>Too many website themes provided by Hugo to make a website instanly.</li>
+</ul>
+<h1 id="what-is-pagination">what is pagination?</h1>
+<p>Assume that &ldquo;you have a 50 blog posts and display this all posts in a single page&rdquo;. <strong>What will be happen?</strong></p>
+<ul>
+<li>Your website gets slow down</li>
+<li>User may not view the all posts</li>
+<li>Website not looks like a professionial.</li>
+</ul>
+<p>So, we are decide to give a pagination for each 5(your wish) posts. Pagination will display the given number of blog posts. So, we can easily overcome the above problems using pagination.</p>
+<h1 id="hugos-internal-pagination">Hugo&rsquo;s Internal Pagination</h1>
+<p><strong>Hugo provides a internal pagination. Here, we are look into &ldquo;how to use that internal pagination to your hugo website&rdquo;</strong>.</p>
+<p>Lets move into coding part. Ausume that your list page code looks like or something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+{{ range .Pages }}
+&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration-none&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-body&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-xs font-weight-bold text-primary text-uppercase mb-1&#34;</span>&gt;
+      {{ .Title }}
+      &lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">a</span>&gt;
+{{ end }}
+
+</code></pre></div><p>If you want to add pagination, you should change the code as below and <strong>add Paginate count(Paginate: 5) in your config file.</strong> Paginate count decide &ldquo;How many blog posts should be present in a page&rdquo;.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+{{ range .Paginator.Pages }}
+&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration-none&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-body&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-xs font-weight-bold text-primary text-uppercase mb-1&#34;</span>&gt;
+      {{ .Title }}
+      &lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">a</span>&gt;
+{{ end }}
+
+{{ template &#34;_internal/pagination.html&#34; . }}
+
+</code></pre></div><p>You will get a pagination in bottom of the page. This image shows &ldquo;how internal pagination looks&rdquo;.</p>
+<p><img src="/images/hugo-pagination/hugo-pagination.PNG" alt="Preview of hugo&rsquo;s internal pagination"></p>
+<hr>
+
+        </article>
+
+        
+        <div class="mb-4 pt-3">
+          <div class="card shadow ">
+            <h5 class="card-header bg-warning">Tags</h5>
+            <div class=" card-body">
+              
+              
+              <a href="/tags/hugo"
+                class="btn btn-warning rounded-pill mb-2">Hugo</a>
+              
+              <a href="/tags/web-development"
+                class="btn btn-warning rounded-pill mb-2">Web development</a>
+              
+              
+            </div>
+            </a>
+          </div>
+        </div>
+
+
+
+        <div id="disqus_thread"></div>
+        <script>
+          
+
+          
+
+          (function () { 
+            var d = document,
+              s = d.createElement('script');
+            s.src = 'https:\/\/gurusabarish.disqus.com';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer py-3 text-muted text-center">
+
+
+    <p>
+
+        <h5 class="text-uppercase pb-2 font-weight-bold"><a href="https://gurusabarish.tech">Guru Sabarish</a></h5>
+
+        &copy; 2020 All Rights Reserved<br>
+
+        <a href="https://gurusabarish.tech">Guru Sabarish</a> made with
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+        </svg>
+        and
+        <a href="https://gohugo.io" target="_blank">Hugo</a>
+
+        by
+        <a href="https://github.com/gurusabarish" target="_blank">Gurusabarish</a>
+    </p>
+
+</footer>
+
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/bootstrap.min.js"></script></body>
+
+</html>
