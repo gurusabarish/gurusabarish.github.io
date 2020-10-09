@@ -1,9 +1,9 @@
 ---
-title: "What Is Bootstrap and How to Use in Project"
+title: "What is Bootstrap and How to Use in Project"
 date: 2020-10-01T22:33:38+05:30
 draft: false
 subtitle: ""
-github_link: "https://github.com/gurusabarish/hugo-profile"
+github_link: "https://github.com/gurusabarish/gurusabarish.tech/blob/master/content/blog/what-is-bootstrap-and-how-to-use-in-project.md"
 author: "Gurusabarish"
 tags:
   - Web development

@@ -3,7 +3,7 @@ title: "Download Youtube Videos in Python"
 date: 2020-10-01T13:21:52+05:30
 draft: false
 subtitle: "Download Youtube Videos in Python"
-github_link: "https://github.com/gurusabarish/hugo-profile"
+github_link: "https://github.com/gurusabarish/gurusabarish.tech/blob/master/content/blog/download-youtube-videos-in-python.md"
 author: "Gurusabarish"
 tags:
   - Python

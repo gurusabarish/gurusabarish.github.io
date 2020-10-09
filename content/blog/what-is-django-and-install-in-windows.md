@@ -3,7 +3,7 @@ title: "What Is Django and How to Install in Windows"
 date: 2020-10-01T20:03:28+05:30
 draft: false
 subtitle: "What Is Django and How to Install in Windows"
-github_link: "https://github.com/gurusabarish/hugo-profile"
+github_link: "https://github.com/gurusabarish/gurusabarish.tech/blob/master/content/blog/what-is-django-and-install-in-windows.md"
 author: "Gurusabarish"
 tags:
   - Python

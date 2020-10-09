@@ -3,7 +3,7 @@ title: "Add Hugo pagination for blog or posts in hugo"
 date: 2020-09-28T18:07:11+05:30
 draft: false
 subtitle: "Add Hugo pagination for blog or posts in hugo"
-github_link: "https://github.com/gurusabarish/hugo-profile"
+github_link: "https://github.com/gurusabarish/gurusabarish.tech/blob/master/content/blog/hugo-pagination.md"
 author: "Gurusabarish"
 tags:
   - Hugo
