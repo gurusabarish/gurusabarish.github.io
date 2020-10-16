@@ -41,10 +41,9 @@ params:
 
   # About
   profile_image: "/images/gurusabarish.webp"
-  descripe_l1_person: "Hi, I'm Gurusabarish, a passionate web developer and ML engineer. 
+  descripe_l1_person: "Hi, I'm Gurusabarish, a passionate web developer and ML engineer from India. 
   I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-  descripe_l2_person: "This is just a example for about section. You can easily change with the help of cofig file."
-  job: "Web developer"
+  descripe_l2_person: ""
   resume: ""
 
 Author:
