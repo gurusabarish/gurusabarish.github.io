@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: 
 
 Sitemap: https://gurusabarish.tech/sitemap.xml
