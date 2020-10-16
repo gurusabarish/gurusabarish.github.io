@@ -168,23 +168,24 @@
           </div>
         </div>
 
-        {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-        {{ $.Scratch.Add "path" .Site.BaseURL }}
+
+        {{ $siteUrl := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+        {{ $.Scratch.Add "sitePath" .Site.BaseURL }}
+
+        {{ $.Scratch.Add "siteBreadcrumbs" (slice (dict "url" .Site.BaseURL "name" "home" "position" 1 )) }}
+        {{ range $index, $element := split $siteUrl "/" }}
+        {{ $.Scratch.Add "sitePath" $element }}
+        {{ $.Scratch.Add "sitePath" "/" }}
+        {{ if ne $element "" }}
+        {{ $.Scratch.Add "siteBreadcrumbs" (slice (dict "url" ($.Scratch.Get "sitePath") "name" . "position" (add $index 2))) }}
+        {{ end }}
+        {{ end }}
+
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item" aria-current="page">
-              <a href="/">home</a>
-            </li>
-            {{ range $index, $element := split $url "/" }}
-            {{ $.Scratch.Add "path" $element }}
-            {{ if ne $element "" }}
-            <li class="breadcrumb-item" aria-current="page">
-              <a href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
-            </li>
-            {{ $.Scratch.Add "path" "/" }}
+            {{ range $.Scratch.Get "siteBreadcrumbs" }}
+            <li class="breadcrumb-item" aria-current="page"><a href="{{ .url }}"> {{ .name }} </a></li>
             {{ end }}
-            {{ end }}
-          </ol>
         </nav>
 
         <!-- image -->
@@ -220,5 +221,32 @@
       </div>
     </div>
   </div>
+
+  {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+  {{ $.Scratch.Add "path" .Site.BaseURL }}
+
+  {{ $.Scratch.Add "breadcrumb" (slice (dict "url" .Site.BaseURL "name" "home" "position" 1 )) }}
+  {{ range $index, $element := split $url "/" }}
+  {{ $.Scratch.Add "path" $element }}
+  {{ $.Scratch.Add "path" "/" }}
+  {{ if ne $element "" }}
+  {{ $.Scratch.Add "breadcrumb" (slice (dict "url" ($.Scratch.Get "path") "name" . "position" (add $index 2))) }}
+  {{ end }}
+  {{ end }}
+
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{{ range $.Scratch.Get "breadcrumb" }}{{ if ne .position 1 }},{{ end }}{
+          "@type": "ListItem",
+          "position": {{ .position }},
+          "item": {
+            "@id": "{{ .url }}",
+            "name": "{{ .name }}"
+          }
+      }{{ end }}]
+  }
+  </script>
 </section>
 {{ end }}
