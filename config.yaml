@@ -1,4 +1,4 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://gurusabarish.tech"
 languageCode: "en"
 title: "Gurusabarish"
 
@@ -31,17 +31,14 @@ params:
 
   # About
   profile_image: "/images/gurusabarish.webp"
-<<<<<<< HEAD
   descripe_l1_person: "Hi, I'm Gurusabarish, a passionate web developer and ML engineer from India. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
   descripe_l2_person:
   job: "Web Developer"
   useresume: true
-=======
   descripe_l1_person: "Hi, I'm Gurusabarish, a passionate web developer and ML engineer from India. 
   I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
   descripe_l2_person: ""
   job: "Web Developer"
->>>>>>> 112281fd83085b8201eee8c485c0f336529b8123
   resume: ""
 
   # Things I do
