@@ -2,12 +2,22 @@
     <div class="p-2"></div>
     <div class="about p-3 bg-white">
         <div class="container">
-            <h1 class="text-center">{{ .Site.Params.name }}</h1>
+            <h1 class="text-center">
+                {{ if .Site.Params.name }}
+                {{ .Site.Params.name }}
+                {{ end }}
+            </h1>
             <div class="row justify-content-center ">
                 <div class="col-lg-3 pt-4 text-center">
+                    {{ if .Site.Params.profile_image }}
                     <img src="{{ .Site.Params.profile_image }}" width="200" height="200" alt="{{ .Site.Params.name }}"
                         class="rounded">
-                    <div class="about-me jop font-weight-bold text-secondary">{{ .Site.Params.job }}</div>
+                    {{ end }}
+                    <div class="about-me jop font-weight-bold text-secondary">
+                        {{ if .Site.Params.job }}
+                        {{ .Site.Params.job }}
+                        {{ end }}
+                    </div>
 
                     {{ if .Site.Params.linkedin }}
                     <a class="text-white" href="{{ .Site.Params.linkedin }}" aria-label="linkedin">
@@ -17,22 +27,31 @@
                                 d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
                         </svg>
                     </a>
+
                     {{ end }}
                 </div>
 
                 <div class="col-lg-7 pt-3 ">
                     <div class="about-content text-dark p-3">
+                        {{ if .Site.Params.descripe_l1_person }}
                         {{ .Site.Params.descripe_l1_person }}
+<<<<<<< HEAD
+                        {{ end }}
+
+=======
+>>>>>>> 112281fd83085b8201eee8c485c0f336529b8123
                         {{ if .Site.Params.descripe_l2_person }}
                         <br><br>
                         {{ .Site.Params.descripe_l2_person }}
                         {{ end }}
                     </div>
                     <div class="social p-4">
+                        {{ if .Site.Params.useresume }}
                         <a href="{{ .Site.Params.resume | default "#" }}" class="btn btn-info" role="button"
                             aria-pressed="true">
                             Resume
                         </a>
+                        {{ end }}
 
                         {{ if .Site.Params.github }}
                         <a class="text-dark" href="{{ .Site.Params.github }}" aria-label="github">
@@ -63,6 +82,20 @@
                             </svg>
                         </a>
                         {{ end }}
+
+                        {{ if .Site.Params.facebook }}
+                        <a class="text-info" href="{{ .Site.Params.facebook }}" aria-label="facebook">
+                            <svg width="2em" height="2em" aria-hidden="true" focusable="false" data-prefix="fab"
+                                data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                </path>
+                            </svg>
+
+                        </a>
+                        {{ end }}
+
                     </div>
                 </div>
             </div>
