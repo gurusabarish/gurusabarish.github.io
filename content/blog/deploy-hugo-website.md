@@ -1,6 +1,6 @@
 ---
 title: "Deploy your hugo website with Netlify, Github pages and Vercel"
-date: 2020-10-09T13:23:39+05:30
+date: 2020-10-31T13:23:39+05:30
 draft: false
 subtitle: ""
 author: "Gurusabarish"
@@ -11,6 +11,7 @@ description: "Deploy your hugo website with Netlify, Github and Vercel step by s
 ---
 
 Table of contents:
+
 - [Build your website with "Hugo" comment](#build-your-website-with-hugo-comment)
 - [Deploy your hugo website with Netlify](#deploy-your-hugo-website-with-netlify)
   - [**Manual deploy:**](#manual-deploy)
@@ -21,6 +22,7 @@ Table of contents:
 - [Deploy without using build(*hugo*) comment](#deploy-without-using-buildhugo-comment)
   - [**Netlify method without using build comment**:](#netlify-method-without-using-build-comment)
   - [**Vercel method**:](#vercel-method)
+
 
 ## Build your website with "Hugo" comment 
 Go to the terminal and type hugo to build website files with public folder. The public folder is used to deploy your hugo website. Now you should have a folder as the image.
