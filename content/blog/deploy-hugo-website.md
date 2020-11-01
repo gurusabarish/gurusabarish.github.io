@@ -1,13 +1,13 @@
 ---
 title: "Deploy your hugo website with Netlify, Github pages and Vercel"
 date: 2020-10-09T13:23:39+05:30
-draft: true
+draft: false
 subtitle: ""
 author: "Gurusabarish"
 tags:
   - Hugo
 bg_image: ""
-description: ""
+description: "Deploy your hugo website with Netlify, Github and Vercel step by step procedure."
 ---
 
 Table of contents:
