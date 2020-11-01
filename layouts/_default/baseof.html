@@ -13,7 +13,9 @@
 </head>
 
 <body>
+    <div class="position-auto">
     {{- partial "header.html" . -}}
+    </div>
     {{- block "main" . -}}{{- end }}
     {{- partial "footer.html" . -}}
     {{- partial "scripts.html" . -}}

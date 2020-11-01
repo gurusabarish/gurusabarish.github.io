@@ -68,8 +68,4 @@ If you want to add pagination, you should change the code as below and **add Pag
 
 ```
 
-You will get a pagination in bottom of the page. This image shows "how internal pagination looks".
-
-![Preview of hugo's internal pagination](/images/hugo-pagination/hugo-pagination.PNG)
-
 ------------------------------------------------

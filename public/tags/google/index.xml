@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on Gurusabarish</title>
+    <link>https://gurusabarish.tech/tags/google/</link>
+    <description>Recent content in Google on Gurusabarish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Oct 2020 12:45:02 +0530</lastBuildDate>
+    
+	<atom:link href="https://gurusabarish.tech/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google Knows your Whatsapp Status</title>
+      <link>https://gurusabarish.tech/blog/google-knows-whatsapp-status/</link>
+      <pubDate>Thu, 29 Oct 2020 12:45:02 +0530</pubDate>
+      
+      <guid>https://gurusabarish.tech/blog/google-knows-whatsapp-status/</guid>
+      <description>How google knows your whatsapp status? Google traces even your whatsapp status. Lets see how google sence, Whatsapp is using google API to backup our whatsapp messages in google drive. According to google privacy policy, google read some whatsapp data. From the data, google can trace even our whatsapp status.
+How google tracing us? Google&amp;rsquo;s all products are in open source. So, they are earning by the advertisment. They want to earn more money, so they are tracing our each and eavery moments.</description>
+    </item>
+    
+  </channel>
+</rss>

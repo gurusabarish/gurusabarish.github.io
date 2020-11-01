@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" href="/images/fav.png" type="image/gif">
+
+<style>
+     
+    .footer {
+        background: #f2f2f2;
+    }
+
+    .navbar-text {
+        font-size: 17px;
+    }
+
+    .footer-site {
+        font-family: 'Alata', sans-serif;
+        font-size: 25px;
+    }
+
+    iframe {
+        border: none;
+    }
+
+     
+    .navbar-color {
+        color: #101820ff;
+    }
+
+    .navbar-brand {
+        font-size: 22px;
+    }
+
+    .nav-link {
+        color: #101820ff !important;
+        font-size: 18px;
+    }
+</style>
+<meta name="description" content="Bootstrap is a framework to customize your website as mobile friendly. Bootstrap build with CSS, JavaScript and jquery. CSS and JavaScript are doing major things in bootstrap." />
+<title>What is Bootstrap and How to Use in Project</title>
+<style>
+  article {
+    font-family: 'Peddana', serif;
+    line-height: 1.3;
+    font-size: 30px;
+  }
+
+  article blockquote {
+    margin: 0 !;
+    border-left: 4px solid #248aaa !important;
+    background-color: #248baa15 !important;
+    padding: 0.3rem !important;
+    padding-left: 1rem !important;
+  }
+
+  article blockquote>p {
+    color: #3c4858 !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  article h1 {
+    font-size: 55px !important;
+  }
+
+  article h2 {
+    font-size: 42px !important;
+  }
+
+  article h3 {
+    font-size: 35px !important;
+  }
+
+  article h4,
+  h5,
+  h6 {
+    font-size: 30px !important;
+  }
+
+  article table {
+    border-radius: 0.1rem;
+    background: #e5e9f2;
+    border: 1px solid #c0ccda;
+    padding: 0.1rem;
+  }
+
+  article table tr {
+    height: 40px !important;
+  }
+
+  article table th,
+  td {
+    padding: 0.5rem;
+    border-left: 1px solid #8392a5;
+    border-bottom: 1px solid #8392a5;
+  }
+
+  article table thead tr {
+    background: #248aaa;
+    color: #e5e9f2;
+  }
+
+  article tbody tr:nth-child(odd) {
+    background-color: #e5e9f2;
+  }
+
+  article tbody tr:hover {
+    background: #c0ccda;
+  }
+
+  article img {
+    width: 100%;
+  }
+
+  article caption,
+  figcaption {
+    caption-side: bottom;
+    text-align: center;
+    color: #8392a5;
+  }
+
+  article pre {
+    margin: 5px;
+    padding: 5%;
+    font-size: 18px;
+    max-height: 400px;
+    border-radius: 2%;
+    background-color: #1f618d !important;
+    color: white;
+  }
+
+  article pre>code {
+    padding: 10px !important;
+  }
+
+  article a.header-anchor {
+    text-decoration: none;
+    color: #1c2d41;
+  }
+
+  article a.header-anchor i {
+    font-size: 10pt;
+    color: #3c4858;
+    display: none;
+    margin-left: 0.5rem;
+  }
+
+  article a.header-anchor:hover i {
+    display: inline-block;
+  }
+
+  article a.header-anchor code {
+    color: #e83e8c;
+  }
+
+  article kbd {
+    background-color: #248aaa !important;
+    color: #f9fafc;
+  }
+
+  article mark {
+    background-color: #ffc21280;
+  }
+</style>
+
+
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css" media="all">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet" media="all">
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+	<div class="container">
+		<a class="navbar-brand font-weight-bold" href="/">
+			
+			<img src="/images/fav.png" width="30" height="30" class="d-inline-block align-top"
+				alt="Gurusabarish">
+			Gurusabarish
+			
+		</a>
+		<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+			aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto text-center">
+				<li class="nav-item navbar-text">
+					<a class="nav-link" href="/#" aria-label="about">About</a>
+				</li>
+
+				
+				<li class="nav-item  navbar-text">
+					<a class="nav-link" href="/blog" aria-label="Blog">Blog</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<section class="bg-white">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-8">
+        
+        <div class="p-2">
+          <h1>What is Bootstrap and How to Use in Project</h1>
+          <div class="text-muted">
+            
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z" />
+              <path fill-rule="evenodd"
+                d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z" />
+            </svg>
+            Oct 1, 2020
+
+            
+            
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            </svg>
+            Gurusabarish
+            
+
+            
+            
+            <a href="https://github.com/gurusabarish/gurusabarish.tech/blob/master/content/blog/what-is-bootstrap-and-how-to-use-in-project.md" target="_blank" title="Edit on github">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil float-right" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z" />
+                <path fill-rule="evenodd"
+                  d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z" />
+              </svg>
+            </a>
+            
+          </div>
+
+          
+          <div class="text-dark py-2">
+            Bootstrap is a framework to customize your website as mobile friendly. Bootstrap build with CSS, JavaScript and jquery. CSS and JavaScript are doing major things in bootstrap.
+          </div>
+          
+        </div>
+
+        <div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              
+              
+              <li><a href="/">Home</a></li>
+              
+              
+              
+              
+              
+              
+              
+              
+              <span class="text-muted px-2">/</span>
+              <li><a href="/blog">Blog</a></li>
+              
+              
+              
+              
+              
+              
+              <span class="text-muted px-2">/</span>
+              <li><a href="/blog/what-is-bootstrap-and-how-to-use-in-project">What is bootstrap and how to use in project</a></li>
+              
+              
+              
+              
+            </ol>
+          </nav>
+        </div>
+        
+        <div class="py-2">
+          
+        </div>
+
+        
+        <article>
+          <p>Bootstrap is a framework to customize your website as mobile friendly. Bootstrap build with CSS, JavaScript and jquery. CSS and JavaScript are doing major things in bootstrap. It&rsquo;s have certain layouts,components and so. We can take that things and use with our website.</p>
+<p>Official website: <a href="https://getbootstrap.com/">https://getbootstrap.com/</a></p>
+<h1 id="how-to-use-bootstrap-in-your-project">How to use Bootstrap in your project?</h1>
+<p>We can use bootstrap with two ways.</p>
+<ul>
+<li><strong>Download and use:</strong> Download Bootstrap and use with your local machine.</li>
+<li><strong>Bootstrap CDN:</strong> This is a best way to use Bootstrap and it&rsquo;s based on could. Insert below code in your HTML header to use Bootstrap.
+<pre><code>&lt;!-- CSS only --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot; integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot; crossorigin=&quot;anonymous&quot;&gt;
+
+&lt;!-- JS, Popper.js, and jQuery --&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot; integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot; integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot; integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+</code></pre></li>
+</ul>
+<hr>
+
+        </article>
+
+        
+        <div class="mb-4 p-5">
+          <div class="card">
+            <h5 class="card-header m-0">Tags</h5>
+            <div class=" card-body">
+              
+              
+              <a href="/tags/web-development" class="btn btn-info btn-rounded mb-2">Web development</a>
+              
+              
+            </div>
+            </a>
+          </div>
+        </div>
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "gurusabarish" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer py-3 text-muted text-center">
+    <div class="pb-2">
+        <div class="footer-site  pb-2 font-weight-bold">
+            <a class="text-uppercase" href="https://gurusabarish.tech">Gurusabarish</a>
+        </div>
+        &copy; 2020 All Rights Reserved<br>
+
+        Made with
+        <a class="text-dark" href="https://github.com/gurusabarish/hugo-profile"
+            aria-label="hugo-profile">Hugo-profile</a>
+        and
+        <a class="text-dark" href="https://gohugo.io" aria-label="hugo">Hugo</a>
+
+        by
+        
+        
+        <a class="text-dark" href="https://github.com/gurusabarish" aria-label="github handle">Gurusabarish</a>
+        
+        
+    </div>
+</footer>
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/bootstrap.min.js"></script></body>
+
+</html>
