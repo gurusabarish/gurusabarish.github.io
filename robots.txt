@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://gurusabarish.tech/sitemap.xml
-Host: https://gurusabarish.tech
+Sitemap: https:/sitemap.xml
+Host: https
