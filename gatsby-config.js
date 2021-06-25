@@ -2,11 +2,11 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Guru Sabarish',
+    title: 'Guru Sabarish Portfolio',
     description:
       'Hi, I am Gurusabarish, a passionate web developer and ML engineer from India. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    siteUrl: 'https://gurusabarish.tech', // No trailing slash allowed!
+    image: '/me.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@gurusabarishh',
   },
   plugins: [
@@ -152,7 +152,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-45666519-2',
+        trackingId: 'UA-167646412-7',
       },
     },
   ],
