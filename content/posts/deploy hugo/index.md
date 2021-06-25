@@ -4,6 +4,8 @@ date: 2021-01-19
 description: 'Deploy your hugo website with Netlify, Github and Vercel step by step procedure.'
 draft: false
 slug: /deploy-your-hugo-website-with-netlify-github-pages-and-vercel
+tags:
+  - Hugo
 ---
 
 # Build your website with "Hugo" comment

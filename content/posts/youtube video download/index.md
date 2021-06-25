@@ -4,6 +4,8 @@ date: 2021-02-05
 excerpt: 'Download the YouTube videos using python and pytube. We are download the single, multiple and playlist videos in python and pytube.'
 draft: false
 slug: /python's-pytube-library-to-download-youtube-videos
+tags:
+  - Python
 ---
 
 YouTube is a social platform for video sharing. We may spent 2 to 4 hours in YouTube and want to download some videos But YouTube doesn't allow to download any video. _In this article, We learn to download the YouTube videos in Python using Pytube library._

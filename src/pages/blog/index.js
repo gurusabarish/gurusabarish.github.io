@@ -151,12 +151,8 @@ const blogPage = ({ location, data }) => {
 
       <StyledMainContainer>
         <header>
-          <h1 className="big-heading">blog</h1>
-          <p className="subtitle">
-            <a href="https://www.wizardingworld.com/writing-by-jk-rowling/blog">
-              a collection of memories
-            </a>
-          </p>
+          <h1 className="big-heading">Blog</h1>
+          <p className="subtitle">A collection of blogs</p>
         </header>
 
         <StyledGrid>
