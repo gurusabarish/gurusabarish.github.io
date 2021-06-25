@@ -3,7 +3,7 @@ title: Markdown Test File
 description: abc234
 date: 2019-12-07
 draft: false
-slug: /blog/markdown-playground
+slug: /markdown-playground
 tags:
   - Testing
 ---
