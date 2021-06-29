@@ -63,7 +63,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
     <p>
-      A passionate web app developer from India. I tend to make use of modern web technologies to
+      A passionate web app developer. I tend to make use of modern web technologies to
       build websites that looks great, feels fantastic, and functions correctly.
     </p>
   );
