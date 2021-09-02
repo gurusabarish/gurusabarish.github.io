@@ -58,7 +58,7 @@ module.exports = {
             });
             // add link with es-us prefix
             links.push({
-              url: `${site.siteMetadata.siteUrl}/es-us/blog/${blog.title}`,
+              url: `${site.siteMetadata.siteUrl}/es-us/blog/${blog.title}`
               changefreq: 'daily',
               priority: 0.8,
             });
