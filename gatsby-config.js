@@ -16,6 +16,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-sitemap`,
 
     {
       resolve: `gatsby-plugin-manifest`,
@@ -29,13 +30,6 @@ module.exports = {
         icon: 'src/images/logo.png',
       },
     },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        output: `/sitemap.xml`,
-      },
-    },
-
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
