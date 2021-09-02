@@ -33,7 +33,40 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
-        createLinkInHead: true,
+
+        // use this query to fetch all the data needed for sitemap links
+        query: `
+        {
+          site {
+            siteMetadata {
+            siteUrl
+          }
+          blogs {
+            title
+          }
+          ...
+        }
+      `,
+        serialize: ({ site, blogs }) => {
+          const links = [];
+          blogs.forEach(blog => {
+            // add link with en-us prefix
+            links.push({
+              url: `${site.siteMetadata.siteUrl}/en-us/blog/${blog.title}`,
+              changefreq: 'daily',
+              priority: 0.8,
+            });
+            // add link with es-us prefix
+            links.push({
+              url: `${site.siteMetadata.siteUrl}/es-us/blog/${blog.title}`,
+              changefreq: 'daily',
+              priority: 0.8,
+            });
+          });
+
+          // plugin will use returned links to generate sitemap, so only include the links you want to show!
+          return links;
+        },
       },
     },
     `gatsby-plugin-offline`,
