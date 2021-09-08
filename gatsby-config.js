@@ -15,11 +15,13 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-robots-txt`,
+
+    `gatsby-plugin-sitemap`,
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: 'gatsby-plugin-robots-txt',
       options: {
-        exclude: [`/blog/tags/*`],
+        host: config.siteUrl,
+        sitemap: `${config.siteUrl}/sitemap/sitemap-0.xml`,
       },
     },
     {

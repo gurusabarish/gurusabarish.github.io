@@ -1,4 +1,5 @@
 module.exports = {
+  siteUrl: 'https://gurusabarish.github.io',
   email: 'gurusabarisha@gmail.com',
 
   socialMedia: [
