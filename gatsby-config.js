@@ -21,7 +21,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: config.siteUrl,
-        sitemap: `${config.siteUrl}/sitemap/sitemap-0.xml`,
+        sitemap: `${config.siteUrl}/sitemap/sitemap-index.xml`,
       },
     },
     {
