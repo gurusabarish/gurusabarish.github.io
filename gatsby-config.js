@@ -156,10 +156,27 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'G-69Z9740912',
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'G-69Z9740912',
+        trackingIds: [
+          'G-69Z9740912', 
+        ],
+        gtagConfig: {
+          optimize_id: 'GTM-PV2G9BR',
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+        },
       },
     },
   ],
