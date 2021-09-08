@@ -82,13 +82,11 @@ const Footer = () => (
     </StyledSocialLinks>
 
     <StyledCredit tabindex="-1">
+      <div>&copy; All rights reserved</div>
       <div>
-        Designed &amp; Built by
-        <a href="https://github.com/bchiang7/v4">Brittany Chiang</a>
-      </div>
-      <div>
-        Maintained by
-        <a href="https://gurusabarish.github.io">GuruSabarish</a>
+        <a href="https://gurusabarish.github.io">
+          Built by Brittany Chiang &amp; Maintained by GuruSabarish
+        </a>
       </div>
     </StyledCredit>
   </StyledFooter>

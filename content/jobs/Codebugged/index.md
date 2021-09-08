@@ -1,6 +1,6 @@
 ---
 date: '2021-06-23'
-title: 'Software Developer '
+title: 'Django Developer '
 company: 'Codebugged'
 location: ''
 range: 'Feb - April 2021'
