@@ -6,7 +6,7 @@ module.exports = {
     description:
       'Hi, I am Gurusabarish, a passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly.',
     siteUrl: 'https://gurusabarish.github.io',
-    image: '/me.png',
+    image: '/me.jpg',
     twitterUsername: '@gurusabarishh',
   },
   plugins: [
