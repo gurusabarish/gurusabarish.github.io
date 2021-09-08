@@ -71,24 +71,24 @@ const Footer = () => (
     <StyledSocialLinks>
       <ul>
         {socialMedia &&
-            socialMedia.map(({ name, url }, i) => (
-              <li key={i}>
-                <a href={url} aria-label={name}>
-                  <Icon name={name} />
-                </a>
-              </li>
-            ))}
+          socialMedia.map(({ name, url }, i) => (
+            <li key={i}>
+              <a href={url} aria-label={name}>
+                <Icon name={name} />
+              </a>
+            </li>
+          ))}
       </ul>
     </StyledSocialLinks>
 
     <StyledCredit tabindex="-1">
       <div>
-          Designed &amp; Built by
+        Designed &amp; Built by
         <a href="https://github.com/bchiang7/v4">Brittany Chiang</a>
       </div>
       <div>
-          Maintained by
-        <a href="https://gurusabarish.tech">GuruSabarish</a>
+        Maintained by
+        <a href="https://gurusabarish.github.io">GuruSabarish</a>
       </div>
     </StyledCredit>
   </StyledFooter>

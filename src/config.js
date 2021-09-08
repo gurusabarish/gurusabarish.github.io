@@ -39,7 +39,7 @@ module.exports = {
     },
     {
       name: 'Blog',
-      url: 'https://blog.gurusabarish.tech',
+      url: '/blog',
     },
   ],
 

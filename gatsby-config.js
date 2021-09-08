@@ -4,9 +4,9 @@ module.exports = {
   siteMetadata: {
     title: 'Guru Sabarish Portfolio',
     description:
-      'Hi, I am Gurusabarish, a passionate web developer and ML engineer from India. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly.',
-    siteUrl: 'https://gurusabarish.tech', // No trailing slash allowed!
-    image: '/me.png', // Path to your image you placed in the 'static' folder
+      'Hi, I am Gurusabarish, a passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly.',
+    siteUrl: 'https://gurusabarish.github.io',
+    image: '/me.png',
     twitterUsername: '@gurusabarishh',
   },
   plugins: [
@@ -16,8 +16,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-sitemap`,
-
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/blog/tags/*`],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

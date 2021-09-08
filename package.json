@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "sabarish",
+  "description": "Hi, I am Gurusabarish, a passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly.",
   "version": "1.0.0",
   "author": "Gurusabarish",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/gurusabarish/gurusabarish.github.io"
   },
   "keywords": [
     "gatsby"
