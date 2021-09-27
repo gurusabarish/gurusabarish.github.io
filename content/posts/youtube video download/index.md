@@ -3,7 +3,7 @@ title: "Python's Pytube Library to Download YouTube Videos"
 date: 2021-02-05
 excerpt: 'Download the YouTube videos using python and pytube. We are download the single, multiple and playlist videos in python and pytube.'
 draft: false
-slug: /python's-pytube-library-to-download-youtube-videos
+slug: /python-pytube-library-to-download-youtube-videos
 tags:
   - Python
 ---

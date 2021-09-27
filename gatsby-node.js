@@ -10,12 +10,26 @@ const _ = require('lodash');
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const postTemplate = path.resolve(`src/templates/post.js`);
+  const DjangoPostTemplate = path.resolve(`src/templates/series/djangoPost.js`);
   const tagTemplate = path.resolve('src/templates/tag.js');
 
   const result = await graphql(`
     {
       postsRemark: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/posts/" } }
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+      djangoRemark: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/series/django/" } }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
@@ -48,6 +62,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.frontmatter.slug,
       component: postTemplate,
+      context: {},
+    });
+  });
+
+  const django = result.data.djangoRemark.edges;
+
+  django.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: DjangoPostTemplate,
       context: {},
     });
   });

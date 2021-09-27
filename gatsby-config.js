@@ -15,17 +15,64 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    // {
+    //   resolve: `gatsby-plugin-sitemap`,
+    //   options: {
+    //     query: `{
+    //       site {
+    //         siteMetadata {
+    //           siteUrl
+    //         }
+    //       }
+    //       allSitePage {
+    //         edges {
+    //           node {
+    //             path
+    //           }
+    //         }
+    //       }
+    //       allMarkdownRemark {
+    //         edges {
+    //           node {
+    //             fields {
+    //               slug
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }`,
+    //     serialize: ({ allSitePage, allMarkdownRemark }) => {
+    //       const pages = [];
+    //       allSitePage.edges.map(edge => {
+    //         pages.push({
+    //           url: config.siteUrl + edge.node.path,
+    //           changefreq: `daily`,
+    //           priority: 0.7,
+    //         });
+    //       });
+    //       allMarkdownRemark.edges.map(edge => {
+    //         pages.push({
+    //           url: `${config.siteUrl}/${edge.node.fields.slug}`,
+    //           changefreq: `daily`,
+    //           priority: 0.7,
+    //         });
+    //       });
+
+    //       return pages;
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: './sitemap',
+        output: '/sitemap.xml',
       },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: config.siteUrl,
-        sitemap: `${config.siteUrl}/sitemap/sitemap-index.xml`,
+        sitemap: `${config.siteUrl}/sitemap.xml`,
       },
     },
     {
