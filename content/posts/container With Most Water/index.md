@@ -1,7 +1,7 @@
 ---
 title: 'Container With Most Water | Leetcode solution in JavaScript'
 date: 2021-12-05
-description: 'Solution for `Container With Most Water` using Brute Force and Two Pointer '
+description: 'Solution for `Container With Most Water` using Brute Force and Two Pointer'
 draft: false
 slug: /leetcode/container-with-most-water
 tags:
