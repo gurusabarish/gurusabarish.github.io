@@ -2,7 +2,7 @@
 date: '2021-04-15'
 title: 'Swar chatbot API'
 github: 'https://github.com/gurusabarish/converter'
-external: 'https://codebugged.com/swar/'
+external: 'https://swar.live'
 tech:
   - Django
   - Python

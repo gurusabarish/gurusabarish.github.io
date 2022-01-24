@@ -2,7 +2,7 @@
 date: '2021-01-21'
 title: 'Image format converter'
 github: 'https://github.com/gurusabarish/converter'
-#external: ''
+external: 'https://django-converter.herokuapp.com'
 tech:
   - Django
   - Python
@@ -11,4 +11,4 @@ tech:
 showInProjects: true
 ---
 
-Web app to convert a PNG image to any formats like pdf, jpg and webp
+A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django

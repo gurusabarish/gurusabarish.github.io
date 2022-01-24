@@ -7,5 +7,5 @@ range: 'Jun 2021 - Present'
 url: 'https://ontoborn.com/'
 ---
 
-- Learning AWS and react JS.
-- Developing multi-tenant college management SaaS application using serverless architecture.
+- Built a SaaS platform for college management based on serverless architecture using aws, react and graphql.
+- Built the entire web app and version one is now live
