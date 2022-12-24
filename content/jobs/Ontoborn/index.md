@@ -3,7 +3,7 @@ date: '2021-09-08'
 title: 'Software Developer '
 company: 'Ontoborn'
 location: ''
-range: 'Jun 2021 - Present'
+range: 'Jun 2021 - March 2022'
 url: 'https://ontoborn.com/'
 ---
 
