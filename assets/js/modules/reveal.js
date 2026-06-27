@@ -1,10 +1,17 @@
 /**
  * reveal.js
  * Scroll Reveal — fades in .reveal elements as they enter the viewport.
+ * Skipped entirely when the user prefers reduced motion.
  */
 
 export function initReveal() {
   const reveals = document.querySelectorAll('.reveal');
+
+  // Respect user's motion preference
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    reveals.forEach((el) => el.classList.add('visible'));
+    return;
+  }
 
   const observer = new IntersectionObserver(
     (entries) => {

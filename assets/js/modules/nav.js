@@ -12,6 +12,8 @@ export function initMobileNav() {
   menuBtn.addEventListener('click', () => {
     const isOpen = mobileNav.classList.toggle('open');
     menuBtn.classList.toggle('open', isOpen);
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+    mobileNav.setAttribute('aria-hidden', String(!isOpen));
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
@@ -19,6 +21,8 @@ export function initMobileNav() {
     link.addEventListener('click', () => {
       mobileNav.classList.remove('open');
       menuBtn.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      mobileNav.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
     });
   });

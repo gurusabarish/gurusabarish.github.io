@@ -4,17 +4,22 @@
  */
 
 export function initContactForm() {
-  const sendBtn = document.getElementById('sendMailBtn');
-  if (!sendBtn) return;
+  const form    = document.getElementById('contactForm');
+  if (!form) return;
 
-  sendBtn.addEventListener('click', () => {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
     const name    = document.getElementById('contact-name').value.trim();
     const message = document.getElementById('contact-message').value.trim();
+    const errorEl = document.getElementById('contact-message-error');
 
     if (!message) {
+      errorEl.textContent = 'Please enter a message before sending.';
       document.getElementById('contact-message').focus();
       return;
     }
+
+    errorEl.textContent = '';
 
     const subject = name
       ? `Message from ${name}`
