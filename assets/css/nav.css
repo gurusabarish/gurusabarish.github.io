@@ -1,15 +1,17 @@
+/* ===================================================
+   NAV — Desktop navigation & Mobile drawer
+   =================================================== */
+
 nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   z-index: 100;
   padding: 0 clamp(1.5rem, 5vw, 4rem);
-  height: 64px;
+  height: var(--nav-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(11, 12, 14, 0.85);
+  background: var(--overlay-nav);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -63,14 +65,14 @@ nav {
   opacity: 0.85;
 }
 
-/* Mobile menu button */
+/* ── Mobile hamburger button ── */
+
 .mobile-menu-btn {
   display: none;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 36px;
-  height: 36px;
+  width: 36px; height: 36px;
   background: none;
   border: 1px solid var(--border-hover);
   border-radius: 8px;
@@ -90,14 +92,13 @@ nav {
 .mobile-menu-btn.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .mobile-menu-btn.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
-/* Mobile nav drawer */
+/* ── Mobile drawer ── */
+
 .mobile-nav-drawer {
   display: none;
   position: fixed;
-  top: 64px;
-  left: 0;
-  right: 0;
-  background: rgba(11, 12, 14, 0.98);
+  top: var(--nav-height); left: 0; right: 0;
+  background: var(--overlay-drawer);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   z-index: 99;

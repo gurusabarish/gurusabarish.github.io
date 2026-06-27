@@ -1,0 +1,16 @@
+/**
+ * smooth-scroll.js
+ * Intercepts same-page anchor clicks and animates the scroll.
+ */
+
+export function initSmoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', (e) => {
+      const target = document.querySelector(anchor.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+}

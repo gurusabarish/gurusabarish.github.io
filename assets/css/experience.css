@@ -1,0 +1,207 @@
+/* ===================================================
+   EXPERIENCE — Timeline
+   =================================================== */
+
+#experience {
+  background: var(--bg2);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 8px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: translateX(-4px);
+  box-shadow: 0 0 0 3px var(--bg2), 0 0 0 4px var(--border);
+}
+
+.timeline-date {
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.timeline-role {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+}
+
+.timeline-company {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.company-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--border-hover);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.company-link:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.timeline-desc {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.timeline-desc ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeline-desc ul li::before {
+  content: '→ ';
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.timeline-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ── Badges ── */
+
+.timeline-badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.65rem;
+  border-radius: 100px;
+}
+
+.timeline-badge.fulltime {
+  background: var(--bg-subtle);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.timeline-badge.intern {
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.timeline-badge.oss {
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.company-logo-dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+/* ── Context & quote ── */
+
+.timeline-context {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  margin-bottom: 0.85rem;
+  line-height: 1.7;
+}
+
+.timeline-context strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.timeline-quote {
+  display: flex;
+  gap: 10px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  align-items: flex-start;
+}
+
+.timeline-quote p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.testimonial-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-author {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+
+/* ── Tags ── */
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.timeline-tags span {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  background: var(--bg2);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}

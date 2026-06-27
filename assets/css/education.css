@@ -1,0 +1,49 @@
+/* ===================================================
+   EDUCATION
+   =================================================== */
+
+#education {
+  background: var(--bg);
+}
+
+.edu-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.75rem;
+  transition: border-color 0.2s;
+  box-shadow: 0 1px 3px var(--shadow-card);
+}
+
+.edu-card:hover {
+  border-color: var(--border-hover);
+}
+
+.edu-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.edu-degree {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.edu-school {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.edu-details {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

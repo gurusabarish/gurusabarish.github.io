@@ -1,9 +1,12 @@
+/* ===================================================
+   HERO
+   =================================================== */
+
 #hero {
-  height: 100dvh;
-  min-height: 600px;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
-  padding: 64px clamp(1.5rem, 5vw, 4rem) 0;
+  padding: var(--nav-height) clamp(1.5rem, 5vw, 4rem) 2rem;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -27,6 +30,8 @@
   min-width: 0;
 }
 
+/* ── Profile image ── */
+
 .hero-image-wrap {
   flex-shrink: 0;
   position: relative;
@@ -35,14 +40,14 @@
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid var(--border-hover);
-  box-shadow: 0 0 60px rgba(74, 240, 176, 0.06), 0 0 0 1px var(--border);
+  box-shadow: 0 8px 30px var(--shadow-image), 0 0 0 1px var(--border);
 }
 
 .hero-image-wrap::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(11, 12, 14, 0.55) 0%, transparent 50%);
+  background: linear-gradient(to top, var(--overlay-img-fade) 0%, transparent 50%);
   z-index: 1;
   border-radius: 20px;
   pointer-events: none;
@@ -69,7 +74,7 @@
   bottom: 16px;
   left: 16px;
   z-index: 2;
-  background: rgba(11, 12, 14, 0.75);
+  background: var(--overlay-card-bg);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-hover);
   border-radius: 10px;
@@ -86,10 +91,12 @@
 
 .hero-image-tag-role {
   font-size: 0.7rem;
-  color: var(--accent);
+  color: var(--text-muted);
   margin-top: 2px;
   letter-spacing: 0.03em;
 }
+
+/* ── Background decoration ── */
 
 .hero-grid-bg {
   position: absolute;
@@ -99,7 +106,7 @@
     linear-gradient(90deg, var(--border) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 100%);
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .hero-glow {
@@ -107,17 +114,19 @@
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(74, 240, 176, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--glow-soft) 0%, transparent 70%);
   top: 10%;
   right: -100px;
   pointer-events: none;
 }
 
+/* ── Badge ── */
+
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid rgba(74, 240, 176, 0.25);
+  border: 1px solid var(--border-strong);
   background: var(--accent-dim2);
   color: var(--accent);
   font-size: 0.75rem;
@@ -131,12 +140,17 @@
 
 .hero-badge::before {
   content: '';
-  width: 6px;
-  height: 6px;
+  width: 6px; height: 6px;
   border-radius: 50%;
   background: var(--accent);
-  animation: pulse 2s ease infinite;
 }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* ── Heading ── */
 
 h1 {
   font-family: var(--font-display);
@@ -148,8 +162,10 @@ h1 {
   margin-bottom: 1.1rem;
 }
 
-h1 .accent { color: var(--accent); }
-h1 .muted { color: var(--text-muted); }
+h1 .accent { color: var(--text-muted); }
+h1 .muted  { color: var(--text-muted); }
+
+/* ── Sub-text & actions ── */
 
 .hero-sub {
   font-size: clamp(0.9rem, 1.6vw, 1.05rem);
@@ -166,6 +182,8 @@ h1 .muted { color: var(--text-muted); }
   gap: 0.85rem;
   align-items: center;
 }
+
+/* ── Stats ── */
 
 .hero-stats {
   display: flex;
@@ -184,7 +202,9 @@ h1 .muted { color: var(--text-muted); }
   margin-bottom: 0.3rem;
 }
 
-.stat-val span { color: var(--accent); }
+.stat-val span {
+  color: var(--text-muted);
+}
 
 .stat-label {
   font-size: 0.8rem;

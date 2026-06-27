@@ -16,21 +16,6 @@ Sections:
 - **Open Source** — hugo-profile stats and contributions
 - **Contact** — reach out form
 
-## Project Structure
-
-```
-index.html          # Single-page HTML
-css/
-  base.css          # CSS variables, reset, typography
-  nav.css           # Navigation bar and mobile drawer
-  hero.css          # Hero section layout and styles
-  components.css    # Reusable components (buttons, cards, tags)
-  sections.css      # About, Skills, Experience, Education, Projects, Contact
-  responsive.css    # Mobile and tablet breakpoints
-js/
-  main.js           # Scroll reveal, dynamic tenure calculations, mobile menu
-```
-
 ## Running Locally
 
 No build step needed. Just open `index.html` in a browser, or serve it with any static file server:
