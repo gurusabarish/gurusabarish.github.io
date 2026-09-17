@@ -39,6 +39,10 @@ This compiles all files under `assets/css/` into one minified CSS file and all f
 
 `.github/workflows/deploy.yml` builds the site with Vite and publishes `dist/` to GitHub Pages on every push to `main`. This requires the repository's **Settings → Pages → Build and deployment → Source** to be set to **GitHub Actions** (a one-time change) instead of "Deploy from a branch".
 
+## PR Previews
+
+`netlify.toml` configures [Netlify](https://www.netlify.com) to build the site with `npm run build` and publish the `dist/` directory. Once the repository is connected to a Netlify site, Netlify's built-in Deploy Previews automatically build and deploy every pull request to its own preview URL and post the link as a PR check/comment, with no additional GitHub Actions workflow required.
+
 ## Live Site
 
 [gurusabarish.github.io](https://gurusabarish.github.io)
