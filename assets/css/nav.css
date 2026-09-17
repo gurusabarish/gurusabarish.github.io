@@ -33,6 +33,8 @@ nav {
   display: flex;
   gap: 2rem;
   list-style: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-links a {
@@ -59,11 +61,45 @@ nav {
   cursor: pointer;
   text-decoration: none;
   transition: opacity 0.2s;
+  margin-right: 0.75rem;
 }
 
 .nav-cta:hover {
   opacity: 0.85;
 }
+
+/* ── Theme toggle ── */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  background: none;
+  border: 1px solid var(--border-hover);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 7px;
+  color: var(--text-soft);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+/* Show the icon for the theme you can switch *to* */
+.theme-toggle .icon-sun  { display: none; }
+.theme-toggle .icon-moon { display: block; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .theme-toggle .icon-sun  { display: block; }
+  :root:not([data-theme]) .theme-toggle .icon-moon { display: none; }
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-sun  { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 /* ── Mobile hamburger button ── */
 
