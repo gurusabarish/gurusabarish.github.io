@@ -22,12 +22,6 @@
   border-color: var(--border-hover);
 }
 
-.edu-icon {
-  font-size: 1.75rem;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
 .edu-degree {
   font-family: var(--font-display);
   font-size: 1.15rem;

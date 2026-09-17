@@ -48,12 +48,6 @@
   grid-column: 1 / -1;
 }
 
-.fact-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
 .fact-label {
   font-size: 0.75rem;
   text-transform: uppercase;

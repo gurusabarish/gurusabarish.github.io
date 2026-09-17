@@ -30,7 +30,7 @@ export function initContactForm() {
       : message;
 
     window.location.href =
-      `mailto:gurusabarishkumar@gmail.com` +
+      `mailto:gurusabarisha@gmail.com` +
       `?subject=${encodeURIComponent(subject)}` +
       `&body=${encodeURIComponent(body)}`;
   });
