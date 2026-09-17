@@ -1,0 +1,36 @@
+name: Update sitemap lastmod
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'index.html'
+      - 'assets/**'
+
+permissions:
+  contents: write
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update lastmod date in sitemap.xml
+        run: |
+          today=$(date -u +%Y-%m-%d)
+          sed -i "s#<lastmod>.*</lastmod>#<lastmod>${today}</lastmod>#" sitemap.xml
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- sitemap.xml; then
+            git add sitemap.xml
+            git commit -m "chore: update sitemap lastmod [skip ci]"
+            git push
+          else
+            echo "No changes to sitemap.xml"
+          fi
