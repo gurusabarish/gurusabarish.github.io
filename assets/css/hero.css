@@ -96,30 +96,6 @@
   letter-spacing: 0.03em;
 }
 
-/* ── Background decoration ── */
-
-.hero-grid-bg {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(var(--border) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border) 1px, transparent 1px);
-  background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 100%);
-  opacity: 0.4;
-}
-
-.hero-glow {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--glow-soft) 0%, transparent 70%);
-  top: 10%;
-  right: -100px;
-  pointer-events: none;
-}
-
 /* ── Badge ── */
 
 .hero-badge {
@@ -145,11 +121,6 @@
   background: var(--accent);
 }
 
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(0.8); }
-}
-
 /* ── Heading ── */
 
 h1 {
@@ -163,7 +134,6 @@ h1 {
 }
 
 h1 .accent { color: var(--text-muted); }
-h1 .muted  { color: var(--text-muted); }
 
 /* ── Sub-text & actions ── */
 
