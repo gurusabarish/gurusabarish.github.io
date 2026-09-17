@@ -9,6 +9,8 @@ import { fillTimelineDurations, fillHeroStats, fillCareerTotal } from './modules
 import { initContactForm }   from './modules/contact.js';
 import { initSmoothScroll }  from './modules/smooth-scroll.js';
 import { initTheme }         from './modules/theme.js';
+import { initScrollSpy }     from './modules/scrollspy.js';
+import { initExternalLinks } from './modules/external-links.js';
 
 initTheme();
 initReveal();
@@ -18,3 +20,5 @@ fillHeroStats();
 fillCareerTotal();
 initContactForm();
 initSmoothScroll();
+initScrollSpy();
+initExternalLinks();
