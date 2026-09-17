@@ -21,14 +21,14 @@ jobs:
       - name: Update lastmod date in sitemap.xml
         run: |
           today=$(date -u +%Y-%m-%d)
-          sed -i "s#<lastmod>.*</lastmod>#<lastmod>${today}</lastmod>#" sitemap.xml
+          sed -i "s#<lastmod>.*</lastmod>#<lastmod>${today}</lastmod>#" public/sitemap.xml
 
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet -- sitemap.xml; then
-            git add sitemap.xml
+          if ! git diff --quiet -- public/sitemap.xml; then
+            git add public/sitemap.xml
             git commit -m "chore: update sitemap lastmod [skip ci]"
             git push
           else
