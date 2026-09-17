@@ -37,13 +37,11 @@ This compiles all files under `assets/css/` into one minified CSS file and all f
 
 ## Deployment
 
-`.github/workflows/deploy.yml` builds the site with Vite and publishes `dist/` to the `gh-pages` branch on every push to `main`, using [`peaceiris/actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages). This requires two one-time settings changes:
-- **Settings → Pages → Build and deployment → Source** set to **Deploy from a branch** (`gh-pages`, `/ (root)`).
-- **Settings → Actions → General → Workflow permissions** set to **Read and write permissions**, so the workflows can push to `gh-pages`.
+`.github/workflows/deploy.yml` builds the site with Vite and publishes `dist/` to GitHub Pages on every push to `main`. This requires the repository's **Settings → Pages → Build and deployment → Source** to be set to **GitHub Actions** (a one-time change) instead of "Deploy from a branch".
 
 ## PR Previews
 
-`.github/workflows/pr-preview.yml` builds every pull request with Vite (using [`rossjrw/pr-preview-action`](https://github.com/rossjrw/pr-preview-action)) and publishes it to `pr-preview/pr-<number>/` on the `gh-pages` branch, alongside the production site. A bot comment with the live preview URL (`https://gurusabarish.github.io/pr-preview/pr-<number>/`) is added to the PR and kept up to date as new commits are pushed. The preview folder is automatically removed once the PR is closed.
+`netlify.toml` configures [Netlify](https://www.netlify.com) to build the site with `npm run build` and publish the `dist/` directory. Once the repository is connected to a Netlify site, Netlify's built-in Deploy Previews automatically build and deploy every pull request to its own preview URL and post the link as a PR check/comment, with no additional GitHub Actions workflow required.
 
 ## Live Site
 
