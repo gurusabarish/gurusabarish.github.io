@@ -49,6 +49,12 @@ nav {
   color: var(--text);
 }
 
+.nav-links a[aria-current="true"],
+.mobile-nav-drawer a[aria-current="true"] {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .nav-cta {
   font-size: 0.875rem;
   font-family: var(--font-body);

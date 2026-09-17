@@ -13,6 +13,13 @@ export function initReveal() {
     return;
   }
 
+  // Fall back to showing everything immediately in browsers without
+  // IntersectionObserver support, instead of leaving content hidden.
+  if (!('IntersectionObserver' in window)) {
+    reveals.forEach((el) => el.classList.add('visible'));
+    return;
+  }
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
