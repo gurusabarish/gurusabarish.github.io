@@ -8,7 +8,9 @@ import { initMobileNav }     from './modules/nav.js';
 import { fillTimelineDurations, fillHeroStats, fillCareerTotal } from './modules/dates.js';
 import { initContactForm }   from './modules/contact.js';
 import { initSmoothScroll }  from './modules/smooth-scroll.js';
+import { initTheme }         from './modules/theme.js';
 
+initTheme();
 initReveal();
 initMobileNav();
 fillTimelineDurations();
